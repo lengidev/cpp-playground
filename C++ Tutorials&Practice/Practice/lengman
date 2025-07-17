@@ -1,0 +1,6 @@
+#include "lengman."
+
+lengman::lengman()
+{
+    //ctor
+}
