@@ -46,7 +46,7 @@ This repository is organized into **6 main levels** that guide you from basic C+
 5. **[5_Object_Oriented_Programming/](./5_Object_Oriented_Programming/)** - Classes, Encapsulation, Problem Solving
 6. **[6_Advanced_Concepts/](./6_Advanced_Concepts/)** - Templates, Pointers, STL
 
-🎓 Topics Covered
+##🎓 Topics Covered
 ### Fundamentals
 - Data types and variables
 - Input/output with `cin`/`cout`
