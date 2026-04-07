@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # C++ Playground - Second Year 🚀
 
 ## 📖 File Organization
