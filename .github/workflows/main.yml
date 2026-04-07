@@ -1,0 +1,233 @@
+#!/bin/bash
+# C++ Playground Restructuring Script
+# This script reorganizes your C++ files into a professional structure
+# Run this from the root of your cpp-playground directory
+
+set -e  # Exit on error
+
+echo "🚀 Starting C++ Playground Restructuring..."
+
+# Create directory structure
+echo "📁 Creating directories..."
+
+mkdir -p 1_Fundamentals/variables_and_io
+mkdir -p 1_Fundamentals/control_flow
+mkdir -p 1_Fundamentals/input_output
+
+mkdir -p 2_Loops_and_Iterations/while_loops
+mkdir -p 2_Loops_and_Iterations/for_loops
+mkdir -p 2_Loops_and_Iterations/nested_and_advanced
+
+mkdir -p 3_Arrays_and_Data_Structures/1d_arrays/fundamentals
+mkdir -p 3_Arrays_and_Data_Structures/1d_arrays/operations
+mkdir -p 3_Arrays_and_Data_Structures/multidimensional_arrays
+
+mkdir -p 4_Functions/basics
+mkdir -p 4_Functions/advanced
+mkdir -p 4_Functions/function_templates
+
+mkdir -p 5_Object_Oriented_Programming/classes_and_objects
+mkdir -p 5_Object_Oriented_Programming/encapsulation
+mkdir -p 5_Object_Oriented_Programming/problem_solving
+mkdir -p 5_Object_Oriented_Programming/advanced
+
+mkdir -p 6_Advanced_Concepts/pointers_and_memory
+mkdir -p 6_Advanced_Concepts/templates
+mkdir -p 6_Advanced_Concepts/stl
+
+mkdir -p include
+mkdir -p src
+mkdir -p docs
+
+# ============================================
+# 1. FUNDAMENTALS - Variables and I/O
+# ============================================
+echo "📦 Moving Fundamentals > Variables and I/O..."
+
+mv "C++ Tutorials&Practice/C++ Programming Tutorials - 2 - Understanding a Simple C++ Program.cpp" \
+   "1_Fundamentals/variables_and_io/01_understanding_simple_program.cpp" 2>/dev/null || true
+
+mv "C++ Tutorials&Practice/C++ Programming Tutorials - 5 - Creating a Basic Calculator.cpp" \
+   "1_Fundamentals/variables_and_io/02_basic_calculator.cpp" 2>/dev/null || true
+
+mv "C++ Tutorials&Practice/C++ Programming Tutorials - 4 - Arithmetic.cpp" \
+   "1_Fundamentals/variables_and_io/04_arithmetic_operations.cpp" 2>/dev/null || true
+
+# ============================================
+# 1. FUNDAMENTALS - Control Flow
+# ============================================
+echo "📦 Moving Fundamentals > Control Flow..."
+
+mv "C++ Tutorials&Practice/C++ Programming Tutorials - 8 - if Statement.cpp" \
+   "1_Fundamentals/control_flow/08_if_statement.cpp" 2>/dev/null || true
+
+mv "C++ Tutorials&Practice/C++ Programming Practice - 8 - if Statement - age checker.cpp" \
+   "1_Fundamentals/control_flow/08_if_statement_age_checker.cpp" 2>/dev/null || true
+
+mv "C++ Tutorials&Practice/C++ Programming Tutorials - 16 & 17 - if Statement (part 2).cpp" \
+   "1_Fundamentals/control_flow/16_17_if_statement_part2.cpp" 2>/dev/null || true
+
+mv "C++ Tutorials&Practice/C++ Programming Tutorials - 25 - switch.cpp" \
+   "1_Fundamentals/control_flow/25_switch_statements.cpp" 2>/dev/null || true
+
+# ============================================
+# 2. LOOPS - While Loops
+# ============================================
+echo "📦 Moving Loops > While Loops..."
+
+mv "C++ Tutorials&Practice/C++ Programming Tutorials - 18 - while Loops.cpp" \
+   "2_Loops_and_Iterations/while_loops/18_while_loops.cpp" 2>/dev/null || true
+
+mv "C++ Tutorials&Practice/C++ Programming Tutorials - 19 - Simple Program Using a Loop.cpp" \
+   "2_Loops_and_Iterations/while_loops/19_simple_program_using_loop.cpp" 2>/dev/null || true
+
+mv "C++ Tutorials&Practice/C++ Programming Tutorials - 20 - Average Calculator.cpp" \
+   "2_Loops_and_Iterations/while_loops/20_average_calculator.cpp" 2>/dev/null || true
+
+# ============================================
+# 2. LOOPS - For Loops
+# ============================================
+echo "📦 Moving Loops > For Loops..."
+
+mv "C++ Tutorials&Practice/C++ Programming Tutorials - 22 & 24 - for Loops & do while.cpp" \
+   "2_Loops_and_Iterations/for_loops/22_24_for_loops_do_while.cpp" 2>/dev/null || true
+
+# ============================================
+# 3. ARRAYS - 1D Arrays Fundamentals
+# ============================================
+echo "📦 Moving Arrays > 1D Arrays Fundamentals..."
+
+mv "C++ Tutorials&Practice/C++ Programming Tutorials - 32 - Arrays.cpp" \
+   "3_Arrays_and_Data_Structures/1d_arrays/fundamentals/32_arrays_basics.cpp" 2>/dev/null || true
+
+mv "C++ Tutorials&Practice/C++ Programming Tutorials - 33 - Creating Arrays with Loops.cpp" \
+   "3_Arrays_and_Data_Structures/1d_arrays/fundamentals/33_creating_arrays_with_loops.cpp" 2>/dev/null || true
+
+# ============================================
+# 3. ARRAYS - 1D Arrays Operations
+# ============================================
+echo "📦 Moving Arrays > 1D Arrays Operations..."
+
+mv "C++ Tutorials&Practice/Practice/Intermediate Practice Loops and 1D Arrays - Print the Reverse of an Arrary.cpp" \
+   "3_Arrays_and_Data_Structures/1d_arrays/operations/print_reverse_of_array.cpp" 2>/dev/null || true
+
+mv "C++ Tutorials&Practice/Practice/Loops and 1D Arrays - Find the Maximum.cpp" \
+   "3_Arrays_and_Data_Structures/1d_arrays/operations/find_the_maximum.cpp" 2>/dev/null || true
+
+mv "C++ Tutorials&Practice/Practice/Loops and 1D Arrays - Sum of Elements.cpp" \
+   "3_Arrays_and_Data_Structures/1d_arrays/operations/sum_of_elements.cpp" 2>/dev/null || true
+
+mv "C++ Tutorials&Practice/Practice/Loops and 1D Arrays - Print Even Numbers in an Array.cpp" \
+   "3_Arrays_and_Data_Structures/1d_arrays/operations/print_even_numbers_in_array.cpp" 2>/dev/null || true
+
+mv "C++ Tutorials&Practice/Practice/Loops and 1D Arrays -Count Positive, Negative, and Zero Values.cpp" \
+   "3_Arrays_and_Data_Structures/1d_arrays/operations/count_positive_negative_zero.cpp" 2>/dev/null || true
+
+mv "C++ Tutorials&Practice/Practice/Intermediate Practice Loops and 1D Arrays - Frequency of a Number.cpp" \
+   "3_Arrays_and_Data_Structures/1d_arrays/operations/frequency_of_a_number.cpp" 2>/dev/null || true
+
+# ============================================
+# 3. ARRAYS - 1D Arrays Calculations
+# ============================================
+echo "📦 Moving Arrays > 1D Arrays Calculations..."
+
+mv "C++ Tutorials&Practice/C++ Programming Tutorials - 34 - Arrays with Calculations.cpp" \
+   "3_Arrays_and_Data_Structures/1d_arrays/34_arrays_with_calculations.cpp" 2>/dev/null || true
+
+# ============================================
+# 4. FUNCTIONS - Basics
+# ============================================
+echo "📦 Moving Functions > Basics..."
+
+mv "C++ Tutorials&Practice/C++ Programming Tutorials - 9 - Functions.cpp" \
+   "4_Functions/basics/09_functions.cpp" 2>/dev/null || true
+
+mv "C++ Tutorials&Practice/C++ Programming Tutorials - 10 - Creating Functions That Use Parameters.cpp" \
+   "4_Functions/basics/10_functions_with_parameters.cpp" 2>/dev/null || true
+
+mv "C++ Tutorials&Practice/C++ Programming Tutorials - 11 - Functions That Use Multiple Parameters.cpp" \
+   "4_Functions/basics/11_functions_with_multiple_parameters.cpp" 2>/dev/null || true
+
+# ============================================
+# 4. FUNCTIONS - Advanced
+# ============================================
+echo "📦 Moving Functions > Advanced..."
+
+mv "C++ Tutorials&Practice/C++ Programming Tutorials - 28 - Default Arguments Parameters in Functions.cpp" \
+   "4_Functions/advanced/28_default_arguments.cpp" 2>/dev/null || true
+
+mv "C++ Tutorials&Practice/C++ Programming Tutorials - 31 - Recursion.cpp" \
+   "4_Functions/advanced/31_recursion.cpp" 2>/dev/null || true
+
+# ============================================
+# 5. OOP - Classes and Objects
+# ============================================
+echo "📦 Moving OOP > Classes and Objects..."
+
+mv "C++ Tutorials&Practice/C++ Programming Tutorials - 12 - Introduction to Classes and Objects.cpp" \
+   "5_Object_Oriented_Programming/classes_and_objects/12_introduction_to_classes.cpp" 2>/dev/null || true
+
+mv "C++ Tutorials&Practice/C++ Programming Tutorials - 13 - Using Variables in Classes.cpp" \
+   "5_Object_Oriented_Programming/classes_and_objects/13_using_variables_in_classes.cpp" 2>/dev/null || true
+
+mv "C++ Tutorials&Practice/C++ Programming Tutorials - 14 - Constructors.cpp" \
+   "5_Object_Oriented_Programming/classes_and_objects/14_constructors.cpp" 2>/dev/null || true
+
+mv "C++ Tutorials&Practice/C++ Programming Tutorials - 15 - Placing Classes in Separate Files.cpp" \
+   "5_Object_Oriented_Programming/classes_and_objects/15_placing_classes_in_separate_files.cpp" 2>/dev/null || true
+
+# ============================================
+# 5. OOP - Encapsulation
+# ============================================
+echo "📦 Moving OOP > Encapsulation..."
+
+mv "C++ Tutorials&Practice/C++ Programming Practice  - Using Variables in Classes - Person Class.cpp" \
+   "5_Object_Oriented_Programming/encapsulation/person_class.cpp" 2>/dev/null || true
+
+# ============================================
+# 5. OOP - Problem Solving
+# ============================================
+echo "📦 Moving OOP > Problem Solving..."
+
+mv "C++ Tutorials&Practice/Practice/Objects, Classes and Constructors - Book Problem.cpp" \
+   "5_Object_Oriented_Programming/problem_solving/01_book_problem.cpp" 2>/dev/null || true
+
+mv "C++ Tutorials&Practice/Practice/Objects, Classes and Constructors - Grade problem.cpp" \
+   "5_Object_Oriented_Programming/problem_solving/02_grade_problem.cpp" 2>/dev/null || true
+
+mv "C++ Tutorials&Practice/Practice/Objects, Classes and Constructors - Rectangle Problem.cpp" \
+   "5_Object_Oriented_Programming/problem_solving/03_rectangle_problem.cpp" 2>/dev/null || true
+
+mv "C++ Tutorials&Practice/C++ Programming Practice - 14 - Constructors - Cars.cpp" \
+   "5_Object_Oriented_Programming/problem_solving/04_cars_constructors.cpp" 2>/dev/null || true
+
+# ============================================
+# Include & Source Files
+# ============================================
+echo "📦 Moving Header and Source Files..."
+
+mv "C++ Tutorials&Practice/Practice/lengman" \
+   "src/lengman.cpp" 2>/dev/null || true
+
+# Create a header file placeholder if lengman.h doesn't exist
+if [ ! -f "include/lengman.h" ]; then
+    touch "include/lengman.h"
+fi
+
+echo "✅ Restructuring complete!"
+echo ""
+echo "📊 Summary of changes:"
+echo "  ✓ 1_Fundamentals/ - Basic concepts and control flow"
+echo "  ✓ 2_Loops_and_Iterations/ - Loop constructs"
+echo "  ✓ 3_Arrays_and_Data_Structures/ - Array operations and DSA basics"
+echo "  ✓ 4_Functions/ - Function definitions and advanced techniques"
+echo "  ✓ 5_Object_Oriented_Programming/ - Classes, objects, and OOP principles"
+echo "  ✓ 6_Advanced_Concepts/ - Templates, pointers, STL"
+echo "  ✓ include/ - Header files"
+echo "  ✓ src/ - Implementation files"
+echo ""
+echo "🎯 Next steps:"
+echo "  1. Add README.md files to each directory"
+echo "  2. Review the structure in your editor"
+echo "  3. Update your .gitignore if needed"
+echo "  4. Commit: git add . && git commit -m 'refactor: reorganize project structure'"
